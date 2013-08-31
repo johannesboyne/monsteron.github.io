@@ -1,0 +1,8 @@
+mixin partner(name, url)
+  div(style='display:inline-block;margin:5px 20px;padding:5px;border:1px solid #CCC;')
+    span #{name}
+    span #{url}
+
+div(style='margin: auto;')
+  mixin partner('zweitag', 'http://zweitag.de')
+  mixin partner('produktivhaus', 'http://zweitag.de')

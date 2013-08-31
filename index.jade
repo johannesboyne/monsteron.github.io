@@ -1,0 +1,67 @@
+doctype 5
+html
+  head
+    title Monster on X
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet', media='screen')
+    link(href='monsteronx.css', rel='stylesheet', media='screen')
+  body
+    //- Head
+    div(class='container')
+      div(class='row')
+        div(class='col-md-12 text-center')
+          h1 Monster on X
+    div(class='rulers')
+      hr(class='light-red')
+      hr(class='dark-red')
+    //- Middlepart
+    div(class='middelpart')
+      div(class='container')
+        div(class='row')
+          div(class='col-md-6')
+            p As a participant of Monster on X I should meet nice people, have a beer with them and learn new things
+          div(class='col-md-6')
+            p Reminder: Don't forget - every last Thursday in month - 7pm. Next Meetups asdjalksdjalskdj.
+    div(class='rulers')
+      hr(class='grey')
+    //- About
+    div(class='aboutpart')
+      div(class='container')
+        div(class='row')
+          div(class='col-md-12 text-center')
+            h2 About
+            p Monster on X, formely Monster on Rails, was originally founded as Ruby on Rails Usergroup Münster. Since then are many corresponding technologies around and we are dealing with many topics like Ruby, Ruby on Rails, Node.js, Sinatra, Software-Architecture, Frontend Performance, JavaScript in general, backbone.js, ember.js, angularJS and more. Besides we are talking about enterprise and startup architectures and DBS. Usually we meet monthly.
+    div(class='rulers')
+      hr(class='dark-red')
+    //- Recent Topics
+    div(class='topicspart')
+      div(class='container')
+        div(class='row')
+          div(class='col-md-12')
+            h2(class='text-center') Recent Topics
+        div(class='row')
+          include recenttopics/topics
+      div(class='rulers')
+        hr(class='light-grey')
+      //- Upcoming Topics
+      div(class='container')
+        div(class='row')
+          div(class='col-md-12')
+            h2(class='text-center') Upcoming Topics
+            iframe(src='https://trello.com/b/3u7oz7Xw/open-monster-x-board')
+            a(class='', href='https://trello.com/b/3u7oz7Xw/open-monster-x-board') see whats coming Next
+    div(class='rulers')
+      hr(class='light-grey')
+    //- Partners
+    div(class='container')
+      div(class='row')
+        div(class='col-md-12 text-center')
+          h2 Partners
+          include partners/partners
+      div(class='row')
+        div(class='col-md-12 text-center')
+          img(src='http://www.monstergrill.io/img/made-with-love-in-muenster.png')
+    //- JavaScripts
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='bootstrap/js/bootstrap.min.js')
